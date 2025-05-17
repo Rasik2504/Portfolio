@@ -123,6 +123,12 @@ span{
 .home-content p{
     font-size: 1.6rem;
 }
+.home-content{
+     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.about-content{
+     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
 
 .social-media a{
     display: inline-flex;
@@ -277,6 +283,9 @@ span{
     display: flex;
     align-items: center;
     z-index: 100;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 2rem;
     
 }
 
@@ -287,8 +296,8 @@ span{
     overflow: hidden;
     display: flex;
     justify-content: center;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     background: #f4efef;
     flex:1 1 30rem;
     background: var(--snd-bg-color);
@@ -297,12 +306,15 @@ span{
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+    flex: 1 1 25rem;
+    max-width: 300px;
 }
 
 .project-box img{
     transition: .5s ease;
     opacity: 0.7;
-    width: 77vw;
+    width: 100%;
+    max-width: 300px;
 }
 
 .project-box:hover img{
@@ -418,109 +430,74 @@ span{
 .profile-link:hover{
     color: #5982F4;
 }
-
-@media (max-width:1200px){
-    html{
-        font-size: 55%;
-    }
+.navbar-toggle{
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.side-navbar{
+    background-color: rgb(16, 26, 43);
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    transition: 0.6s;
+    
+    
+}
+.side-navbar-link{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 2rem;
+    
+}
+.side-navbar h2{
+    font-size: 3rem;
 }
 
-@media (max-width:991px){
-    .header{
-        padding: 2rem 3%;
-    }
-    .section{
-        padding: 10rem 3%;
-    }
-    .services{
-        padding: 7rem;
-    }
-    .project{
-        padding-bottom: 7rem;
-    }
-    .profile{
-        padding: 2rem;
-    }
+.side-navbar-link a{
+    font-size: 1.7rem;
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    top: 100px;
 }
-@media (max-width:768px){
-    #menu-icon{
+.side-navbar-link a:hover{
+    text-decoration: underline;
+    color: rgb(47, 135, 161);
+}
+.x-bar{
+    text-align: right;
+    cursor: pointer;
+    font-size: 2rem;
+    
+}
+.header{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.footer {
+  background-color: #1a1a1a;     /* Dark background */
+  color: #ffffff;                /* White text */
+  text-align: center;            /* Center text */
+  padding: 2rem 0;               /* More vertical spacing */
+  font-size: 5rem;             /* Bigger font size */
+  font-weight: 700;              /* Slightly bold */
+  letter-spacing: 1px;           /* More spacing between letters */
+  margin-top:8rem;              /* Space above footer */
+  border-top: 2px solid #444;
+}
+
+
+/*Media Querry*/
+@media screen and (max-width:600px) {
+    .navbar-toggle{
         display: block;
     }
-
-    .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0,0,0,.2);
-        box-shadow: .1rem solid rgba(0,0,0,.2);
+    .navbar-link{
         display: none;
     }
 
-    .navbar.active{
-        display: block;
-    }
-
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    .home{
-        flex-direction: column;
-    }
-    .home-content h3{
-        font-size: 2.6rem;
-    }
-    .home-content h1{
-        font-size: 5rem;
-    }
-
-    .home-content{
-        order: 2;
-    }
-    .home-content img{
-        width: 70vw;
-        margin-top: 4rem;
-
-    }
-    .about{
-        flex-direction: column;
-    }
-    .about-img img{
-        width: 90vw;
-    }
-    .services h2{
-        margin-bottom: 3rem;
-    }
-    .project h2{
-        margin-bottom: 3rem;
-    }
-    .project-container{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media (max-width:617px){
-    .project-container{
-        grid-template-columns: 1fr;
-    }
-    .home-img img{
-        width: 80vw;
-        margin-top: 8rem;
-    }
-    .about-img img{
-        width: 100vw;
-        margin-top: 4rem;
-    }
-}
-
-@media (max-width:400px){
-    html{
-        font-size: 50%;
-    }
-
-}

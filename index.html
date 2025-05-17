@@ -17,21 +17,43 @@
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
         <nav class="navbar">
+        <div class="navbar-link">
             <a href="#home" class="active">Home</a>
             <a href="#about" class="active">About</a>
             <a href="#services" class="active">Skill</a>
             <a href="#project" class="active">Project</a>
             <a href="#profile" class="active">Profiles</a>
+        </div>
+        <div class="navbar-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
         </nav>
+
+    <!--Side Nav bar-->
+    <div class="side-navbar">
+        <h2>Portfolio</h2>
+        <p class ="x-bar" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+            <div class="side-navbar-link">
+            <a href="#home" class="active">Home</a>
+            <a href="#about" class="active">About</a>
+            <a href="#services" class="active">Skill</a>
+            <a href="#project" class="active">Project</a>
+            <a href="#profile" class="active">Profiles</a>
+            
+    </div>
    
     </header>
     <!--Home Section-->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hi, Myself Rasik</h3>
+            <h3>Hi, Myself</h3>
             <h1>Rasik Rahman</h1>
-            <h3>And I'm a <span>College Student</span></h3>
-            <p> hello guys</p>
+            <h3>I'm a <span>Junior Web Developer</span></h3>
+            <p>Hello Everyone , Myself Rasik ㅤㅤㅤI'm a Juniour Web Developer and currently studying UG degree in B.Tech Aritifical Intelligence & Data Science at EGSPEC Nagapatinam
+            </p>
             <div class="social-media">
                 <a href="#"> <i class="fa-brands fa-facebook"></i></a>
                 <a href="#"> <i class="fa-brands fa-twitter"></i></a>
@@ -41,20 +63,20 @@
             <a href="#" class="btn">Download CV</a>
         </div>
         <div class="home-img">
-            <img src="homeimg.jpg" alt="">
+            <img src="bg1.png" alt="">
         </div>
     </section>
 
     <!--About Section-->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="homeimg.jpg" alt="">
+            <img src="bg2.png" alt="">
         </div>
 
         <div class="about-content">
-            <h2 class="heading">About</h2>
-            <h3>College Student</h3>
-            <p>About me to say</p>
+            <h2 class="heading">About Me</h2>
+            <h3>Junior Web Developer</h3>
+            <p>I am an aspiring data scientist and ㅤjunior web developer currently studying Artificial Intelligence and Data Science at EGSPEC College Nagapattinam. I have a strong passion for leveraging data to create intelligent, data-driven solutions while building responsive, user-friendly web applications. I’m committed to continuous learning and growth in both web development and data science to solve real-world problems effectively.</p>
             <a href="#" class="btn">Read More</a>
         </div>
     </section>
@@ -66,42 +88,44 @@
             <div class="services-box">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Development</h3>
-                <p>i know to code></p>
+                <p>Passionate about crafting beautiful, responsive websites using CSS basics—styles, layouts, and design principles to bring ideas to life.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
 
             <div class="services-box">
                 <i class="fa-brands fa-python"></i>
                 <h3>Python</h3>
-                <p>i know to code></p>
+                <p>Basic Python knowledge: variables, loops, conditionals, functions, lists, dictionaries, simple programs, basic syntax understanding, and logical thinking development.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
 
             <div class="services-box">
                 <i class="fa-solid fa-database"></i>
                 <h3>My SQL</h3>
-                <p>i know to code></p>
+                <p>Skilled in MySQL: writing queries, joins, subqueries, data filtering, table creation, normalization, indexing, and managing relational databases effectively.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
 
             <div class="services-box">
                <i class="fa-solid fa-c"></i>
                 <h3>Problem Solving through C</h3>
-                <p>i know to code></p>
+                <p>Proficient in problem solving using C: control structures, arrays, pointers, functions, logic building, debugging, and basic algorithm implementation.
+
+</p>
                 <a href="#" class="btn">Read More</a>
             </div>
 
             <div class="services-box">
                 <i class="fa-brands fa-html5"></i>
                 <h3>HTML</h3>
-                <p>i know to code></p>
+                <p>Good knowledge of HTML: semantic tags, forms, tables, lists, media embedding, layout structuring, and building clean, accessible web pages.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
 
             <div class="services-box">
                <i class="fa-brands fa-css"></i>
                 <h3>CSS</h3>
-                <p>i know to code></p>
+                <p>Basic understanding of CSS syntax, selectors, properties, styling text, colors, layouts, box model, and responsive design fundamentals.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
         </div>
@@ -115,11 +139,16 @@
                 <img src="project_img.jpg" alt="">
                 <div class="project-layer">
                     <h4>E-COMMERCE WEBSITE</h4>
-                    <p>my first e web</p>
+                    <p>Florix is my first web project, a stylish menswear website built with HTML, CSS, and JavaScript, showcasing modern design, responsive layouts, and interactive features for an engaging user experience</p>
                     <i class="fa-solid fa-up-right-from-sqaure"></i>
                 </div>
             </div>
         </div>
+         <div class="profile-content">
+            <h3>Web Link</h3>
+            <h3>
+            <a href="https://rasik2504.github.io/FLORIX/" class="profile-link" target="_blank">https://rasik2504.github.io/FLORIX/</a>
+            </h3>
     </section>
 
     <!--Profile Section-->
@@ -140,5 +169,8 @@
             </h3>
     </section>
     <script src="main.js"></script>
+    <footer>
+  <p>&copy; 2025 Rasik Rahman. All rights reserved.</p>
+</footer>
 </body>
 </html>
